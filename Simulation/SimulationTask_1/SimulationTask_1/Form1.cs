@@ -128,5 +128,19 @@ namespace SimulationTask_1
                 ind++;
             }
         }
+
+        private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            var customersStatistics = simulator.ResultStatistics;
+            var serversStatistics = new List<ServerStatistics>();
+
+            foreach (var server in simulator.Servers)
+            {
+                serversStatistics.Add(server.ServerStatistics);
+            }
+
+            StatisticsForm statsForm = new StatisticsForm(customersStatistics, serversStatistics);
+            statsForm.Show();
+        }
     }
 }

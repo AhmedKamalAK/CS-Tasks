@@ -14,7 +14,7 @@ namespace SimulationTask_1
         StoppingCondition stoppingCodition;
         private List<ServiceResult> simulationResults;
 
-        Statistics resultStatistics = new Statistics();
+        public CustomersStatistics ResultStatistics { get; private set; }
         public List<Server> Servers { get; private set; }
         public List<int> CustomersQueueDistribution { get; private set; }
         public List<int> CustomersQueueHistogram { get; private set; }
@@ -24,12 +24,14 @@ namespace SimulationTask_1
         {
             neededNumberOfCustomers = 100;
             stoppingCodition = StoppingCondition.NumberOfCustomers;
+            ResultStatistics = new CustomersStatistics();
         }
         public Simulator(int numberOfCustomersToFinish, int timeToFinish, StoppingCondition stoppingCodition)
         {
             this.neededNumberOfCustomers = numberOfCustomersToFinish;
             this.timeToFinish = timeToFinish;
             this.stoppingCodition = stoppingCodition;
+            ResultStatistics = new CustomersStatistics();
         }
         private void CalculateCumlativeDistributionAndRange(Distribution dist)
         {
@@ -157,11 +159,19 @@ namespace SimulationTask_1
             CalculateQueueHistogram();
             
             int maximumQueueLength = CalculateMaximumQueueSize();
-            double AverageCustomerWait = SetAverageCustomerWait(results, numberOfCustomers);
-            double ProbabilityCustomerWait = SetProbabilityCustomerWait(results, numberOfCustomers);
+            double averageCustomerWait = SetAverageCustomerWait(results, numberOfCustomers);
+            double probabilityCustomerWait = SetProbabilityCustomerWait(results, numberOfCustomers);
+
+            ResultStatistics = new CustomersStatistics()
+            {
+                MaximumQueueLength = maximumQueueLength,
+                AverageCustomerWait = averageCustomerWait,
+                ProbabilityCustomerWait = probabilityCustomerWait
+            };
+
             for (int i = 0; i < Servers.Count; i++)
             {
-                Servers[i].CalculateStatistcs(results[results.Count - 1].ServerService.ServiceTimeEnd, numberOfCustomers);
+                Servers[i].CalculateServerStatistcs(results[results.Count - 1].ServerService.ServiceTimeEnd, numberOfCustomers);
             }
 
             return results;

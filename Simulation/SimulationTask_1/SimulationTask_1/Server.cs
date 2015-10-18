@@ -11,25 +11,27 @@ namespace SimulationTask_1
         public int ServerID { get; set; }
         public Distribution ServiceTimeDistribution { get; set; }
         public List<Service> Services { get; set; }
-        public double ServerEffciency { get; set; }
-        public double ServerAverageServerTime { get; private set; }
-        public double ServerProbabilityIdleTime { get; private set; }
-        public double ServerTotalIdleTime { get; private set; }
-        public double ServerTotalBusyTime { get; private set; }
+        public ServerStatistics ServerStatistics { get; set; }
         public List<int> ServerBusyTimeDistribution { get; private set; }
 
-        public void CalculateStatistcs(int servicesEndTime, int numberOfCustomers)
+        public void CalculateServerStatistcs(int servicesEndTime, int numberOfCustomers)
         {
-            ServerEffciency = 0;
+            double serverWorkTime = 0;
             foreach (var service in Services)
             {
-                ServerEffciency += service.ServiceDuraiton;
+                serverWorkTime += service.ServiceDuraiton;
             }
-            ServerAverageServerTime = ServerEffciency / numberOfCustomers;
-            ServerTotalIdleTime = servicesEndTime - ServerEffciency;
-            ServerTotalBusyTime = ServerEffciency;
-            ServerEffciency /= servicesEndTime;
-            ServerProbabilityIdleTime = ServerTotalIdleTime / servicesEndTime;
+
+            double totalIdleTime = servicesEndTime - serverWorkTime;
+            ServerStatistics = new ServerStatistics()
+            {
+                ServerID = this.ServerID,
+                ServerAverageServerTime = serverWorkTime / numberOfCustomers,
+                ServerTotalIdleTime = totalIdleTime,
+                ServerTotalBusyTime = serverWorkTime,
+                ServerEffciency = serverWorkTime / servicesEndTime,
+                ServerProbabilityIdleTime = totalIdleTime / servicesEndTime,
+            };
 
             CalculateBusyTimeDistribution(servicesEndTime);
         }

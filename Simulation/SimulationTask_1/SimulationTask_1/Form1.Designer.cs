@@ -37,6 +37,7 @@
             this.btnCustomersQueueGraph = new System.Windows.Forms.Button();
             this.btnCustomersQueueHistogram = new System.Windows.Forms.Button();
             this.btnServersBusyTimeGraph = new System.Windows.Forms.Button();
+            this.btnStatistics = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,11 +131,22 @@
             this.btnServersBusyTimeGraph.UseVisualStyleBackColor = true;
             this.btnServersBusyTimeGraph.Click += new System.EventHandler(this.btnServersBusyTimeGraph_Click);
             // 
+            // btnStatistics
+            // 
+            this.btnStatistics.Location = new System.Drawing.Point(567, 468);
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.Size = new System.Drawing.Size(75, 56);
+            this.btnStatistics.TabIndex = 10;
+            this.btnStatistics.Text = "Show Statistics";
+            this.btnStatistics.UseVisualStyleBackColor = true;
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 559);
+            this.Controls.Add(this.btnStatistics);
             this.Controls.Add(this.btnServersBusyTimeGraph);
             this.Controls.Add(this.btnCustomersQueueHistogram);
             this.Controls.Add(this.btnCustomersQueueGraph);
@@ -164,6 +176,7 @@
         private System.Windows.Forms.Button btnCustomersQueueGraph;
         private System.Windows.Forms.Button btnCustomersQueueHistogram;
         private System.Windows.Forms.Button btnServersBusyTimeGraph;
+        private System.Windows.Forms.Button btnStatistics;
     }
 }
 
