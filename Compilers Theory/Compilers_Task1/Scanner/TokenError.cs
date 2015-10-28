@@ -12,7 +12,7 @@ namespace Scanner
 
         public override string ToString()
         {
-            return string.Format("Error in line {0} after character {1}.", ErrorLineNumber, Lexeme);
+            return string.Format("Error in line {0} at character {1}.", ErrorLineNumber, Lexeme);
         }
     }
 }
