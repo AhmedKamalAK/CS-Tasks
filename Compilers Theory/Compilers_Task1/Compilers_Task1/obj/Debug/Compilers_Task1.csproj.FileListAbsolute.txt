@@ -1,0 +1,19 @@
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\bin\Debug\Compilers_Task1.exe.config
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\bin\Debug\Compilers_Task1.exe
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\bin\Debug\Compilers_Task1.pdb
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.Properties.Resources.resources
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.csproj.GenerateResource.Cache
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.exe
+D:\Projects\C#\Sources\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\bin\Debug\Compilers_Task1.exe.config
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.exe
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.csprojResolveAssemblyReference.cache
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.Form1.resources
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.Properties.Resources.resources
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\obj\Debug\Compilers_Task1.csproj.GenerateResource.Cache
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\bin\Debug\Compilers_Task1.exe
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\bin\Debug\Compilers_Task1.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\bin\Debug\Scanner.dll
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Compilers_Task1\bin\Debug\Scanner.pdb

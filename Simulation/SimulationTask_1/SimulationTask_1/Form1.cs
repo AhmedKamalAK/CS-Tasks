@@ -22,8 +22,6 @@ namespace SimulationTask_1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Dictionary<string, int> dict = new Dictionary<string, int>();
-            dict.Add("a", 12);
         }
 
         //public void BarExample()

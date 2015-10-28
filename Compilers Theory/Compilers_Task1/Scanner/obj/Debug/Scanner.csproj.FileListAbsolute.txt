@@ -1,0 +1,10 @@
+D:\Projects\C#\Sources\Compilers_Task1\Scanner\bin\Debug\Scanner.dll
+D:\Projects\C#\Sources\Compilers_Task1\Scanner\bin\Debug\Scanner.pdb
+D:\Projects\C#\Sources\Compilers_Task1\Scanner\obj\Debug\Scanner.csprojResolveAssemblyReference.cache
+D:\Projects\C#\Sources\Compilers_Task1\Scanner\obj\Debug\Scanner.dll
+D:\Projects\C#\Sources\Compilers_Task1\Scanner\obj\Debug\Scanner.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Scanner\obj\Debug\Scanner.csprojResolveAssemblyReference.cache
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Scanner\obj\Debug\Scanner.dll
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Scanner\bin\Debug\Scanner.dll
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Scanner\bin\Debug\Scanner.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task1\Scanner\obj\Debug\Scanner.pdb
