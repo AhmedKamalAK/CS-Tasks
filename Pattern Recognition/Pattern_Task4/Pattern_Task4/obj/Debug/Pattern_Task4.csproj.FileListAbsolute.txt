@@ -1,0 +1,9 @@
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\bin\Debug\Pattern_Task4.exe.config
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\obj\Debug\Pattern_Task4.csprojResolveAssemblyReference.cache
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\obj\Debug\Pattern_Task4.Properties.Resources.resources
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\obj\Debug\Pattern_Task4.csproj.GenerateResource.Cache
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\bin\Debug\Pattern_Task4.exe
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\bin\Debug\Pattern_Task4.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\obj\Debug\Pattern_Task4.exe
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\obj\Debug\Pattern_Task4.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Pattern Recognition\Pattern_Task4\Pattern_Task4\obj\Debug\Pattern_Task4.Form1.resources
