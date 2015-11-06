@@ -8,6 +8,8 @@ namespace Pattern_Task4
 {
     class IrisDataset
     {
+        int featuresCount;
+
         public Dictionary<string, List<IrisData>> TrainingSet { get; set; }
         public List<IrisData> TestSet { get; set; }
       
@@ -27,7 +29,7 @@ namespace Pattern_Task4
             foreach (var curClassData in TrainingSet)
             {
                 string curClass = curClassData.Key;
-                int featuresCount = curClassData.Value[0].Features.Count;
+                featuresCount = curClassData.Value[0].Features.Count;
                 double[] curClassMeans = new double[featuresCount];
                 double[] featuresSum = new double[featuresCount];
 
@@ -52,7 +54,6 @@ namespace Pattern_Task4
 
         public Dictionary<string, double[,]> CalculateCovarianceMatrecies()
         {
-            int featuresCount = Means.Count;
             foreach (var curClassData in Means)
             {
                 string curClassName = curClassData.Key;
