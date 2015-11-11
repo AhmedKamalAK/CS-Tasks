@@ -8,7 +8,7 @@ namespace Scanner
 {
     public class Scanner
     {
-        string inputText;
+        DFATokenizer tokenizer;
 
         public List<Token> TokensList { get; private set; }
         public HashSet<SymbolData> SymbolTable { get; private set; }
@@ -17,7 +17,9 @@ namespace Scanner
 
         public Scanner(string inputText)
         {
-            this.inputText = inputText;
+            tokenizer = new DFATokenizer(inputText);
+            tokenizer.Build();
+
             TokensList = new List<Token>();
             SymbolTable = new HashSet<SymbolData>();
             ErrorsList = new List<TokenError>();
@@ -25,10 +27,7 @@ namespace Scanner
         }
 
         public List<Token> Scan()
-        {
-            DFATokenizer tokenizer = new DFATokenizer(inputText);
-            tokenizer.Build();
-
+        {         
             var tokensSequence = new List<TokenType>();
 
             var curToken = tokenizer.GetNextToken();
@@ -53,6 +52,11 @@ namespace Scanner
             FillComentsList();
 
             return TokensList;
+        }
+
+        public Token GetNextToken()
+        {
+            return null;
         }
 
         private void FillSymbolTable()

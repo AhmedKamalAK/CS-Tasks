@@ -6,3 +6,11 @@ D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2
 D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.csproj.GenerateResource.Cache
 D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.exe
 D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.pdb
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Compilers_Task2.exe.config
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Compilers_Task2.exe
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Compilers_Task2.pdb
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.csprojResolveAssemblyReference.cache
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.Properties.Resources.resources
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.csproj.GenerateResource.Cache
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.exe
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.pdb
