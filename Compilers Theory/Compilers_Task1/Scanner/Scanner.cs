@@ -40,7 +40,7 @@ namespace Scanner
                     break;
                 }
 
-                if (curToken.TokenType != TokenType.WhiteSpace)
+                if (curToken.TokenType != TokenType.WhiteSpace && curToken.TokenType != TokenType.Comment)
                 {
                     TokensList.Add(curToken);
                     tokensSequence.Add(curToken.TokenType);
@@ -56,7 +56,7 @@ namespace Scanner
 
         public Token GetNextToken()
         {
-            return null;
+            
         }
 
         private void FillSymbolTable()
