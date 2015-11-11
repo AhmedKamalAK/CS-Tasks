@@ -14,3 +14,16 @@ D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debu
 D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.csproj.GenerateResource.Cache
 D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.exe
 D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.pdb
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.csprojResolveAssemblyReference.cache
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.Form1.resources
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.Properties.Resources.resources
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.csproj.GenerateResource.Cache
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.exe
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Compilers_Task2.exe.config
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Compilers_Task2.exe
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Compilers_Task2.pdb
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Parser.dll
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Scanner.dll
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Scanner.pdb
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Parser.pdb
+D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.pdb

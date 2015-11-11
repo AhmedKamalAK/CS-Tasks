@@ -58,7 +58,7 @@ namespace Scanner
         {
             Token nextToken = tokenizer.GetNextToken();
 
-            while (nextToken.TokenType != TokenType.WhiteSpace && nextToken.TokenType != TokenType.Comment)
+            while (nextToken.TokenType == TokenType.WhiteSpace || nextToken.TokenType == TokenType.Comment)
             {
                 nextToken = tokenizer.GetNextToken();
             }

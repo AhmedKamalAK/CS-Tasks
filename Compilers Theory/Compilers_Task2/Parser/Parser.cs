@@ -21,16 +21,24 @@ namespace Parser
             scanner = new Scanner.Scanner(inputText);
         }
 
+        public AbstractSyntaxTree Parse()
+        {
+            curToken = scanner.GetNextToken();
+            SyntaxTreeNode syntaxTreeRoot = StatementSequence();
+            AbstractSyntaxTree syntaxTree = new AbstractSyntaxTree(syntaxTreeRoot);
+
+            return syntaxTree;
+        }
+
         private SyntaxTreeNode StatementSequence()
         {
             SyntaxTreeSequenceNode node = new SyntaxTreeSequenceNode();
 
-            node.Sequence.Add(Statement());
-
-            while (curToken.TokenType == TokenType.Semicolon)
+            while (curToken.TokenType != TokenType.EndOfFile && curToken.TokenType != TokenType.Else && curToken.TokenType!= TokenType.End && curToken.TokenType != TokenType.Until)
             {
-                Match(TokenType.Semicolon);
                 node.Sequence.Add(Statement());
+                if (curToken.TokenType != TokenType.EndOfFile)
+                    Match(TokenType.Semicolon);
             }
 
             return node;
@@ -48,7 +56,7 @@ namespace Parser
             {
                 node = RepeatStatement();
             }
-            else if (curToken.TokenType == TokenType.Assignment)
+            else if (curToken.TokenType == TokenType.Identifier)
             {
                 node = AssignStatement();
             }
@@ -152,6 +160,7 @@ namespace Parser
             if (IsComparison(curToken.TokenType))
             {
                 SyntaxTreeBinaryNode temp = new SyntaxTreeBinaryNode() { Token = curToken };
+                Match(curToken.TokenType);
                 temp.Left = node;
                 temp.Right = SimpleExpression();
                 node = temp;
@@ -200,7 +209,7 @@ namespace Parser
         }
         private SyntaxTreeNode Factor()
         {
-            SyntaxTreeBinaryNode node = null;
+            SyntaxTreeNode node = null;
             if (curToken.TokenType == TokenType.LeftParenthesis)
             {
                 Match(TokenType.LeftParenthesis);

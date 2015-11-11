@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parser
 {
-    abstract class SyntaxTreeNode
+    public abstract class SyntaxTreeNode
     {
 
     }
