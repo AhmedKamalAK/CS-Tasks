@@ -1,0 +1,7 @@
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Parser\bin\Debug\Parser.dll
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Parser\bin\Debug\Parser.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Parser\obj\Debug\Parser.csprojResolveAssemblyReference.cache
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Parser\obj\Debug\Parser.dll
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Parser\obj\Debug\Parser.pdb
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Parser\bin\Debug\Scanner.dll
+D:\FCIS\4th Year\Tasks\CS-Tasks\Compilers Theory\Compilers_Task2\Parser\bin\Debug\Scanner.pdb
