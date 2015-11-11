@@ -56,7 +56,14 @@ namespace Scanner
 
         public Token GetNextToken()
         {
-            
+            Token nextToken = tokenizer.GetNextToken();
+
+            while (nextToken.TokenType != TokenType.WhiteSpace && nextToken.TokenType != TokenType.Comment)
+            {
+                nextToken = tokenizer.GetNextToken();
+            }
+
+            return nextToken;
         }
 
         private void FillSymbolTable()
