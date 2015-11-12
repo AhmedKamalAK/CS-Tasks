@@ -28,7 +28,7 @@ namespace Parser
 
                 TreeView temp = new TreeView();
                 temp=(curNode.Sequence[i].PrintParseTree( nodeIndex + 1));
-                t = (TreeView)temp.Parent ; 
+                t.Nodes.Add(temp.Nodes[0]);  
 
 
             }

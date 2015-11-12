@@ -31,6 +31,7 @@ namespace Compilers_Task2
 
             AbstractSyntaxTree tree = parser.Parse();
            parseTree = tree.syntaxTreeRoot.PrintParseTree( -1);
+           parseTree.Show();
 
             
         }
