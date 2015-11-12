@@ -9,6 +9,6 @@ namespace Parser
 {
     public abstract class SyntaxTreeNode
     {
-        public abstract TreeView PrintParseTree(TreeNode parentNode);
+        public abstract void PrintParseTree(TreeNode parentNode);
     }
 }

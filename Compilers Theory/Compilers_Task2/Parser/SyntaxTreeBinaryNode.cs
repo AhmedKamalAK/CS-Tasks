@@ -13,36 +13,27 @@ namespace Parser
         public SyntaxTreeNode Left { get; set; }
         public SyntaxTreeNode Right { get; set; }
         public Token Token { get; set; }
-        public override TreeView PrintParseTree(TreeNode parentNode)
+        public override void PrintParseTree(TreeNode parentNode)
         {
             SyntaxTreeBinaryNode curNode = (SyntaxTreeBinaryNode) this;
-            //TreeView t = new TreeView();
-
+          
             string nodeName = "If parts";
             if (curNode.Token != null) 
                 nodeName = curNode.Token.TokenType.ToString();
 
             TreeNode node = new TreeNode(nodeName);
-            parentNode.Nodes.Add(node);
-            TreeView temp = new TreeView();
+
             if (curNode.Left != null)
             {
-                temp = curNode.Left.PrintParseTree(node);
-                //t.Nodes[0].Nodes.Add(temp.Nodes[0]); 
+                curNode.Left.PrintParseTree(node);
             }
-
 
             if (curNode.Right != null)
             {
-                temp = curNode.Right.PrintParseTree(node);
-                //t.Nodes[0].Nodes.Add(temp.Nodes[0]); 
+                curNode.Right.PrintParseTree(node);
             }
 
-            return null;
+            parentNode.Nodes.Add(node);
         }
-
-            
-            
-        
     }
 }

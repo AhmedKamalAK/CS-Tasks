@@ -26,17 +26,24 @@ namespace Compilers_Task2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string inputText = textBox1.Text;
-            Parser.Parser parser = new Parser.Parser(inputText);
+            try
+            {
+                string inputText = textBox1.Text;
+                Parser.Parser parser = new Parser.Parser(inputText);
 
-            AbstractSyntaxTree tree = parser.Parse();
+                AbstractSyntaxTree tree = parser.Parse();
 
-            TreeNode root = new TreeNode("Program");
-            parseTree.Nodes.Add(root);
+                parseTree.Nodes.Clear();
+                TreeNode root = new TreeNode("Program");
+                parseTree.Nodes.Add(root);
+
+                tree.syntaxTreeRoot.PrintParseTree(root);
             
-            tree.syntaxTreeRoot.PrintParseTree(root);
-            
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)

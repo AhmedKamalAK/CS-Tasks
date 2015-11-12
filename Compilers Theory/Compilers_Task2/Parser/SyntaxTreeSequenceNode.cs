@@ -16,22 +16,16 @@ namespace Parser
 
         }
 
-        public override TreeView PrintParseTree(TreeNode parentNode)
+        public override void PrintParseTree(TreeNode parentNode)
         {
             SyntaxTreeSequenceNode curNode = (SyntaxTreeSequenceNode)this;
-            TreeView t = new TreeView();
-
-
+           
             for (int i = 0; i < curNode.Sequence.Count; i++)
             {
-                TreeNode node = t.Nodes.Add("Statement" + (i+1));
+                TreeNode node = new TreeNode("Statement" + (i+1));
+                curNode.Sequence[i].PrintParseTree(node);
                 parentNode.Nodes.Add(node);
-                TreeView temp = new TreeView();
-                temp = (curNode.Sequence[i].PrintParseTree(node));
-                //t.Nodes.Add(temp.Nodes[0]);
-                
             }
-            return t;
         }
     }
 }

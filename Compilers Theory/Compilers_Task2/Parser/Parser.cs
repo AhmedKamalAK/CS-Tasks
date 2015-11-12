@@ -32,13 +32,21 @@ namespace Parser
 
         public AbstractSyntaxTree Parse()
         {
-            curToken = scanner.GetNextToken();
-            SyntaxTreeNode syntaxTreeRoot = StatementSequence();
-            AbstractSyntaxTree syntaxTree = new AbstractSyntaxTree(syntaxTreeRoot);
+            SyntaxTreeNode root = BeginParsing();
+            if (curToken.TokenType != TokenType.EndOfFile)
+                Error();
 
+            AbstractSyntaxTree syntaxTree = new AbstractSyntaxTree(root);
             return syntaxTree;
         }
 
+        private SyntaxTreeNode BeginParsing()
+        {
+            curToken = scanner.GetNextToken();
+            SyntaxTreeNode syntaxTreeRoot = StatementSequence();
+
+            return syntaxTreeRoot;
+        }
         private SyntaxTreeNode StatementSequence()
         {
             SyntaxTreeSequenceNode node = new SyntaxTreeSequenceNode();
@@ -270,6 +278,7 @@ namespace Parser
                 return true;
             }
 
+            Error();
             return false;
         }
         private bool IsComparison(TokenType token)
@@ -279,5 +288,9 @@ namespace Parser
                 || curToken.TokenType == TokenType.Equal;
         }
         
+        private void Error()
+        {
+            throw new Exception(string.Format("Unexpected token {0}", curToken.TokenType.ToString()));
+        }
     }
 }
