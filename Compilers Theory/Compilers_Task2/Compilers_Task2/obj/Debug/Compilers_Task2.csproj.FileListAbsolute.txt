@@ -27,3 +27,8 @@ D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\
 D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Scanner.pdb
 D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Parser.pdb
 D:\الكلية\4th year\tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.pdb
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Parser.dll
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Scanner.dll
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Scanner.pdb
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\bin\Debug\Parser.pdb
+D:\FCIS\4th Year\Tasks\Compilers Theory\Compilers_Task2\Compilers_Task2\obj\Debug\Compilers_Task2.Form1.resources

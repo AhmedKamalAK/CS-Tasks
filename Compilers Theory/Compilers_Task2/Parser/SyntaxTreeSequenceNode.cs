@@ -13,24 +13,23 @@ namespace Parser
         public SyntaxTreeSequenceNode()
         {
             Sequence = new List<SyntaxTreeNode>();
-     
+
         }
 
-        public override TreeView PrintParseTree( int nodeIndex)
+        public override TreeView PrintParseTree(TreeNode parentNode)
         {
             SyntaxTreeSequenceNode curNode = (SyntaxTreeSequenceNode)this;
             TreeView t = new TreeView();
-           
-              t.Nodes.Add("Statement");
-            
+
+
             for (int i = 0; i < curNode.Sequence.Count; i++)
             {
-
+                TreeNode node = t.Nodes.Add("Statement" + (i+1));
+                parentNode.Nodes.Add(node);
                 TreeView temp = new TreeView();
-                temp=(curNode.Sequence[i].PrintParseTree( nodeIndex + 1));
-                t.Nodes.Add(temp.Nodes[0]);  
-
-
+                temp = (curNode.Sequence[i].PrintParseTree(node));
+                //t.Nodes.Add(temp.Nodes[0]);
+                
             }
             return t;
         }

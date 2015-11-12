@@ -30,10 +30,13 @@ namespace Compilers_Task2
             Parser.Parser parser = new Parser.Parser(inputText);
 
             AbstractSyntaxTree tree = parser.Parse();
-           parseTree = tree.syntaxTreeRoot.PrintParseTree( -1);
-           parseTree.Show();
 
+            TreeNode root = new TreeNode("Program");
+            parseTree.Nodes.Add(root);
             
+            tree.syntaxTreeRoot.PrintParseTree(root);
+            
+
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
