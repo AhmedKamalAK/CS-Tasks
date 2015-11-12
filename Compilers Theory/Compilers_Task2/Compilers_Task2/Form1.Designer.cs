@@ -30,6 +30,7 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.parseTree = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
             // 
             // textBox1
@@ -43,7 +44,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(167, 48);
+            this.button1.Location = new System.Drawing.Point(29, 171);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 38);
             this.button1.TabIndex = 1;
@@ -51,11 +52,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // parseTree
+            // 
+            this.parseTree.Location = new System.Drawing.Point(182, 12);
+            this.parseTree.Name = "parseTree";
+            this.parseTree.Size = new System.Drawing.Size(638, 470);
+            this.parseTree.TabIndex = 2;
+            this.parseTree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(928, 504);
+            this.Controls.Add(this.parseTree);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
@@ -69,6 +79,7 @@
 
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TreeView parseTree;
     }
 }
 

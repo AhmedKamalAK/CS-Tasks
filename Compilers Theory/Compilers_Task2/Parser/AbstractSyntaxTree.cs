@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 namespace Parser
 {
     public class AbstractSyntaxTree
     {
-        SyntaxTreeNode syntaxTreeRoot;
+        public  SyntaxTreeNode syntaxTreeRoot;
 
         public AbstractSyntaxTree(SyntaxTreeNode syntaxTreeRoot)
         {
             this.syntaxTreeRoot = syntaxTreeRoot;
         }
+        
     }
 }
